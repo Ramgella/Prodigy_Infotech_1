@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Taj Hotel</title>
+<style type="text/css">
+    *{padding: 0; margin:0; box-sizing:border-box ;}
+    header{
+        width:100%;
+        height: 100vh;
+        background: url(tajhotel.jpg);
+        background-size: cover;
+        font-family: sans-serif;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        font-size: 2em;
+        letter-spacing: 2px;
+        color: black;
+    }
+    .menu a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        font-size: 20px;
+        position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px indianred;
+            transition: 0.3s linear;
+        }
+        .menu a:hover:before {
+            width: 90%;
+        }
+        .bookatrip a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        font-size: 20px;
+        background: indianred;
+        border-radius: 8px;
+        transition: 0.3s;
+        }
+        .bookatrip a:hover {
+            background: transparent;
+            border-bottom: 1px indianred;
+        }
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: black;
+        }
+        .h-txt span {
+            letter-spacing: 5px;
+        }
+        .h-txt h1 {
+            font-size: 3.5em;
+        }
+        .h-txt a{
+            text-decoration: none;
+            background-color: rgb(109, 226, 245);
+            color: rgb(247, 244, 244);
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .h-txt a:hover {
+            background: transparent;
+            border-bottom: 1px indianred;
+        }
+</style>
+</head>
+<body>
+<header>
+     <nav>
+        <div class="logo">
+             Taj Hotel
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About Us</a>
+            <a href="#">Contacts</a>
+        </div>
+        <div class="bookatable">
+            <a href="#">Book a Table</a>
+        </div>
+     </nav>
+     <section class="h-txt">
+        <span>Best Food</span>
+        <h1>No. 1 Hotel in India</h1>
+
+        <br>
+        <a href="#">See plans</a>
+     </section>
+</header>
+</body>
+</html>
